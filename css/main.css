@@ -144,8 +144,8 @@ h3 {
 #spot {
   display: block;
   margin: 5em auto;
-  background-image: url("https://i.ibb.co/nk8sGw8/spot-painting.jpg");
-  background-image: -webkit-image-set(url("https://i.ibb.co/nk8sGw8/spot-painting.jpg") 1x, url("https://i.ibb.co/nk8sGw8/spot-painting.jpg") 2x);
+  background-image: url("/spot-finish.png");
+  background-image: -webkit-image-set(url("/spot-finish.png") 1x, url("/spot-finish.png") 2x);
   background-size: cover;
   width: 75vw;
   max-width: 750px;
