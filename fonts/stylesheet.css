@@ -1,0 +1,16 @@
+﻿/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+
+
+ @font-face {font-family:"Federation TNG Title";
+    src:url("TKTNGTLE.woff") format("woff");    
+    font-weight:normal;font-style:normal;}
+
+    
+@font-face {
+    font-family:"PCap Terminal Bold";
+    src:url("PCap_Terminal_Bold.woff") format("woff");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital@1&display=swap');

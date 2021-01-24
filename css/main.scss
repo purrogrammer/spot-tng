@@ -1,0 +1,165 @@
+
+body { margin: 0; }
+
+h1 {
+  font-family:"Federation TNG Title";
+  color: #1a97fd;
+  font-size: 3.5em;
+ }
+
+h2 {
+  font-family:"Federation TNG Title";
+  color: #1a97fd;
+  font-size: 1.5em;
+}
+h3 {
+  font-family: 'Rambla', sans-serif;
+  color: #0bce1c;
+ padding-left: 10%;
+  padding-right: 10%;
+  font-weight: 300;
+}
+
+#background {
+  background: url("/where_silence_has_lease_hd_129.jpg") center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 75vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  //  margin-left: 10%;
+  //  margin-right: 10%;
+    justify-content: center;
+    color: white;
+}
+
+.glow-on-hover {
+  font-family:"Federation TNG Title";
+  display: flex;
+  margin: 1em;
+  padding: 1em;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #000;
+  // width: 120px;
+  // height: 50px;
+  border: none;
+  outline: none;
+  color: #0bce1c;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 999px;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+  
+
+#spot {
+  display: block;
+  	margin: 5em auto;
+  background-image: url('https://i.ibb.co/nk8sGw8/spot-painting.jpg');
+	background-image: -webkit-image-set(url('https://i.ibb.co/nk8sGw8/spot-painting.jpg') 1x, url('https://i.ibb.co/nk8sGw8/spot-painting.jpg') 2x );
+	background-size: cover;
+	width: 75vw;
+  max-width: 750px;
+  // border-width: 4px;
+  // border-style: solid;
+  // border-color: #ff00c8;
+  position:relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  height: auto;
+  cursor:  crosshair;
+  cursor: url(https://i.ibb.co/MfM40Mr/paintbrush.png) 93 93, crosshair;
+}
+  
+
+#spot:before, #spot:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+#spot:after
+{
+  right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+#spotContainer { 
+  text-align: center;
+  font-family: Avenir, sans-serif;
+}
+#spotContainer figcaption {   
+  margin-top: 2rem; 
+}
